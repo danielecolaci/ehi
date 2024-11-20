@@ -1,6 +1,9 @@
 #jumbotron {
-    height: calc(100vh - 20px);
     padding-top: 100px;
+}
+
+.view {
+    height: 100%;
 
     .btn-link {
         gap: 32px;
