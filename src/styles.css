@@ -53,14 +53,34 @@ h2 {
 }
 
 h3 {
-    font-size: 16px;
     text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 8px 40px;
+
+    span {
+        color: var(--blue);
+        font-weight: 700;
+    }
+}
+
+h4 {
+    font-size: 12px;
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+    color: var(--gray);
+    font-size: 12px;
 }
 
 .btn {
     background-color: var(--gray-light);
     padding: 12px 40px;
     border-radius: 24px;
+    align-items: center;
+    font-size: 12px;
     transition: background-color 1s, color 1s;
 
     i {
