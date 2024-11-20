@@ -1,4 +1,28 @@
-.btn-link {
-    gap: 32px;
-    justify-content: center;
+#jumbotron {
+    height: calc(100vh - 20px);
+    padding-top: 100px;
+
+    .btn-link {
+        gap: 32px;
+        margin-top: 32px;
+        justify-content: center;
+    }
+
+    .jumbotron_img {
+        height: 400px;
+        margin-top: 32px;
+        justify-content: center;
+
+        img {
+            width: 640px;
+            height: 100%;
+        }
+    }
+
+    .hr {
+        height: 2px;
+        width: 100%;
+        border-radius: 1px;
+        background: var(--horizontal-gradient);
+    }
 }
