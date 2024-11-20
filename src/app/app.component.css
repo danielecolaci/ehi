@@ -25,6 +25,7 @@
     .hr {
         height: 2px;
         width: 100%;
+        margin-bottom: 40px;
         border-radius: 1px;
         background: var(--horizontal-gradient);
     }
@@ -32,25 +33,52 @@
 
 .boxes {
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 40px;
+    margin: 40px 0;
 
     .box {
         width: 340px;
         height: 480px;
         background-color: var(--dark-gray);
         border-radius: 32px;
-        margin: 40px 0;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        transition: width 1s, height 1s, box-shadow 1s;
+        cursor: pointer;
+
+        &:hover {
+            width: 360px;
+            height: 500px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+
+            img {
+                width: 300px;
+            }
+        }
 
         .box_info {
-            margin: 50px 0;
+            margin: 45px 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .info_img {
+                width: 120px;
+                margin-top: -120px;
+
+                img {
+                    width: 100%;
+                }
+            }
         }
 
         img {
             width: 280px;
+            transition: width 1s;
         }
     }
+
 }
