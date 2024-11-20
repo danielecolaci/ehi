@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --black: #121212;
+    --dark-gray: #212121;
+    --gray: #808080;
+    --white: #EEEEEE;
+    --gray-light: #ffffff0d;
+    --blue: #2196F3;
+    --violet: #4527A0;
+    --horizontal-gradient: linear-gradient(90deg, #2196F3, #4527A0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--white);
+}
+
+body {
+    background-color: var(--black);
+}
+
+.container {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
