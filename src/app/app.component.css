@@ -225,6 +225,16 @@
             width: calc(50% - 8px);
         }
 
+        input.invalid,
+        textarea.invalid {
+            border: 1px solid red;
+        }
+
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+
         button {
             margin: 16px auto;
             width: 360px;
