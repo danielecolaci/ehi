@@ -5,6 +5,10 @@ footer {
         border-top-left-radius: 32px;
         border-top-right-radius: 32px;
 
+        @media screen and (max-width: 768px) {
+            padding: 20px 32px;
+        }
+
         .top {
             align-items: center;
             gap: 24px;
@@ -18,10 +22,19 @@ footer {
 
         .flex {
             flex-wrap: wrap;
+            gap: 40px;
+
+            @media screen and (max-width: 768px) {
+                gap: 8px;
+            }
 
             ul {
                 list-style: none;
                 margin-right: 160px;
+
+                @media screen and (max-width: 768px) {
+                    margin-right: 40px;
+                }
 
                 th {
                     text-transform: uppercase;
@@ -44,16 +57,34 @@ footer {
                 }
             }
 
+            ul:nth-child(2) {
+
+                @media screen and (max-width: 768px) {
+                    margin-right: 0;
+                    margin-left: auto;
+                }
+            }
+
             ul:last-child {
                 margin-right: 0;
                 margin-left: auto;
+
+                @media screen and (max-width: 768px) {
+                    margin: 0 auto;
+                }
             }
         }
 
         h6 {
             text-align: left;
             margin: 8px 0;
+
+            @media screen and (max-width: 768px) {
+                margin: 0 auto;
+                text-align: center;
+            }
         }
 
     }
+
 }

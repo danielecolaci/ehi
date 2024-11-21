@@ -19,9 +19,19 @@
         transform: translateY(50px);
         animation: slide-up 1s forwards;
 
+        @media screen and (max-width: 768px) {
+            height: 200px;
+        }
+
         img {
             width: 640px;
             height: 100%;
+
+            @media screen and (max-width: 768px) {
+                width: 320px;
+                height: 200px;
+                margin-top: auto;
+            }
         }
     }
 
@@ -204,7 +214,13 @@
         margin: 16px 0;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 24px;
+
+        @media screen and (max-width: 768px) {
+            width: 300px;
+        }
 
         input,
         textarea {
@@ -217,6 +233,10 @@
             color: var(--white);
             outline: none;
             resize: none;
+
+            @media screen and (max-width: 768px) {
+                width: 280px;
+            }
         }
 
         /* Stile per gli input autofill */
@@ -239,17 +259,12 @@
 
         .form-row input {
             width: calc(50% - 8px);
+
+            @media screen and (max-width: 768px) {
+                width: calc(140px - 8px)
+            }
         }
 
-        input.invalid,
-        textarea.invalid {
-            border: 1px solid red;
-        }
-
-        .error {
-            color: red;
-            font-size: 12px;
-        }
 
         button {
             margin: 16px auto;
@@ -263,6 +278,10 @@
             font-weight: 700;
             cursor: pointer;
             transition: transform 1s ease;
+
+            @media screen and (max-width: 768px) {
+                width: 280px;
+            }
         }
 
         button:hover {
