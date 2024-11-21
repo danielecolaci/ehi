@@ -15,6 +15,9 @@
         height: 400px;
         margin-top: 32px;
         justify-content: center;
+        opacity: 0;
+        transform: translateY(50px);
+        animation: slide-up 1s forwards;
 
         img {
             width: 640px;
@@ -28,6 +31,19 @@
         margin-bottom: 40px;
         border-radius: 1px;
         background: var(--horizontal-gradient);
+    }
+}
+
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
