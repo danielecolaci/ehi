@@ -4,7 +4,7 @@
 
     <div id="jumbotron" class="container view">
         <h1>EHI</h1>
-        <h4>Scarica la nostra app e organizzati per i tuoi eventi preferiti</h4>
+        <h5>Scarica la nostra app e organizzati per i tuoi eventi preferiti</h5>
         <div class="btn-link flex">
             <a href="#" class="btn flex"><i class="fa-brands fa-google-play"></i> Play Store</a>
             <a href="#" class="btn flex"><i class="fa-brands fa-apple"></i> App Store</a>
@@ -18,14 +18,14 @@
     <div id="live_it_up" class="container view">
         <h1>EHI</h1>
         <h2>LIVE IT UP</h2>
-        <h4>Il tuo compagno di concerti ideale!</h4>
+        <h5>Il tuo compagno di concerti ideale!</h5>
 
         <div class="flex boxes">
 
             <div class="box flex">
                 <div class="box_info flex">
                     <h3>Tutti gli <span>eventi</span> che<br>ami in un unico luogo</h3>
-                    <h5>Segui i migliori eventi su un’unica piattaforma</h5>
+                    <h6>Segui i migliori eventi su un’unica piattaforma</h6>
                     <div class="info_img">
                         <img src="icon/Star.svg" alt="star_icon">
                     </div>
@@ -37,7 +37,7 @@
                 <img src="img/Chat_List.png" alt="Event">
                 <div class="box_info flex">
                     <h3><span>Organizzati</span> con<br>tutto il mondo</h3>
-                    <h5>Raggiungi e interagisci con fan e amici</h5>
+                    <h6>Raggiungi e interagisci con fan e amici</h6>
                     <div class="info_img">
                         <img src="icon/Chat.svg" alt="chat_icon">
                     </div>
@@ -47,7 +47,7 @@
             <div class="box flex">
                 <div class="box_info flex">
                     <h3>Le <span>informazioni</span> di<br>cui hai bisogno</h3>
-                    <h5>Cerca tramite data, luogo, prezzo e categoria</h5>
+                    <h6>Cerca tramite data, luogo, prezzo e categoria</h6>
                     <div class="info_img">
                         <img src="icon/Search.svg" alt="search_icon">
                     </div>
@@ -62,7 +62,18 @@
     <div id="team" class="container view">
         <h1>EHI</h1>
         <h2>TEAM</h2>
-        <h4>Scopri la nostra crew</h4>
+        <h5>Scopri la nostra crew</h5>
+
+        <div class="team_members flex">
+            @for (member of members; track $index) {
+            <div class="member flex">
+                <img src="team/{{ member.avatar }}.png" alt="">
+                <h4>{{ member.name }}</h4>
+                <h6>Co-Founder</h6>
+                <h5>{{ member.role }}</h5>
+            </div>
+            }
+        </div>
 
     </div>
 
