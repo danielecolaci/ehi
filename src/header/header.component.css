@@ -11,16 +11,6 @@ header {
     }
 }
 
-img {
-    width: 60px;
-    height: 40px;
-    transition: width 1s, height 1s;
-
-    &:hover {
-        width: 72px;
-        height: 48px;
-    }
-}
 
 ul {
     list-style: none;
