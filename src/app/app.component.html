@@ -66,14 +66,36 @@
 
         <div class="team_members flex">
             @for (member of members; track $index) {
-            <div class="member flex">
-                <img src="team/{{ member.avatar }}.png" alt="">
-                <h4>{{ member.name }}</h4>
-                <h6>Co-Founder</h6>
-                <h5>{{ member.role }}</h5>
+            <div class="member_container">
+                <div class="member flex">
+                    <img src="team/{{ member.avatar }}.png" alt="Avatar">
+                    <h4>{{ member.name }}</h4>
+                    <h6>Co-Founder</h6>
+                    <h5>{{ member.role }}</h5>
+                </div>
             </div>
             }
         </div>
+
+        <div class="social">
+            <h5>Puoi trovarci anche su:</h5>
+            <div class="link flex">
+                <a href="https://www.instagram.com/ehiapp/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    <p>Instagram</p>
+                </a>
+                <a href="https://www.tiktok.com/@ehi.app" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <p>TikTok</p>
+                </a>
+                <a href="https://www.linkedin.com/company/ehi-app" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <p>LinkedIn</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="hr"></div>
 
     </div>
 
