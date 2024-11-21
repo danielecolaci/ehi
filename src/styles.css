@@ -74,6 +74,13 @@ h4 {
 h5 {
     font-size: 12px;
     text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+
+    strong {
+        font-weight: 700;
+        font-size: 13px;
+    }
 }
 
 h6 {
