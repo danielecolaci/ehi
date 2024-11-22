@@ -281,7 +281,7 @@
         }
 
         .form-row input {
-            width: calc(50% - 8px);
+            width: calc(300px - 8px);
 
             @media screen and (max-width: 768px) {
                 width: calc(160px - 4px)

@@ -12,12 +12,29 @@ footer {
         .top {
             align-items: center;
             gap: 24px;
+            flex-wrap: wrap;
 
             span {
                 font-size: 40px;
                 font-weight: 900;
                 font-style: italic;
+                margin-right: 40px;
             }
+
+            h5 {
+                margin-right: 0;
+                margin-left: auto;
+
+                strong {
+                    color: var(--blue);
+                }
+
+                @media screen and (max-width: 480px) {
+                    margin: 0 auto;
+                }
+            }
+
+
         }
 
         .flex {
