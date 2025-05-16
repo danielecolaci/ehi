@@ -76,7 +76,7 @@
         cursor: pointer;
 
         .box_info {
-            margin: 40px 0;
+            margin: 60px 0 40px;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -109,6 +109,15 @@
             }
         }
     }
+
+    .box:nth-child(2) {
+
+        .box_info {
+            margin: 40px 0 60px;
+        }
+    }
+
+
 
 }
 

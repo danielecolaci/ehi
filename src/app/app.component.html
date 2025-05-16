@@ -1,126 +1,121 @@
 <app-header />
 
 <main>
-
-    <div id="jumbotron" class="container view">
-        <h1>EHI</h1>
-        <h5>Scarica la nostra app e organizzati per i tuoi eventi preferiti</h5>
-        <div class="btn-link flex">
-            <a href="#" class="btn flex" target="_blank"><i class="fa-brands fa-google-play"></i> Play Store</a>
-            <a href="#" class="btn flex" target="_blank"><i class="fa-brands fa-apple"></i> App Store</a>
-        </div>
-        <div class="jumbotron_img flex">
-            <img src="img/hero.png" alt="Jumbotron_image">
-        </div>
-        <div class="hr"></div>
+  <div id="jumbotron" class="container view">
+    <h1>EHI</h1>
+    <h5>Scarica la nostra app e organizzati per i tuoi eventi preferiti</h5>
+    <div class="btn-link flex">
+      <a href="#" class="btn flex" target="_blank"><i class="fa-brands fa-google-play"></i> Play Store</a>
+      <a href="#" class="btn flex" target="_blank"><i class="fa-brands fa-apple"></i> App Store</a>
     </div>
+    <div class="jumbotron_img flex">
+      <img src="img/hero.png" alt="Jumbotron_image" />
+    </div>
+    <div class="hr"></div>
+  </div>
 
-    <div id="live_it_up" class="container view">
-        <h1>EHI</h1>
-        <h2>LIVE IT UP</h2>
-        <h5>Il tuo compagno di concerti ideale!</h5>
+  <div id="live_it_up" class="container view">
+    <h1>EHI</h1>
+    <h2>VIVI L'EVENTO</h2>
+    <h5>Il tuo compagno di concerti ideale!</h5>
 
-        <div class="flex boxes">
-
-            <div class="box flex">
-                <div class="box_info flex">
-                    <h3>Tutti gli <span>eventi</span> che<br>ami in un unico luogo</h3>
-                    <h6>Segui i migliori eventi su un’unica piattaforma</h6>
-                    <div class="info_img">
+    <div class="flex boxes">
+      <div class="box flex">
+        <div class="box_info flex">
+          <h3>Tutti gli <span>eventi</span> che<br />ami in un unico luogo</h3>
+          <h6>Segui i migliori eventi su un’unica piattaforma</h6>
+          <!--                     <div class="info_img">
                         <img src="icon/Star.svg" alt="star_icon">
-                    </div>
-                </div>
-                <img src="img/Search.png" alt="Search">
-            </div>
+                    </div> -->
+        </div>
+        <img src="img/Search.png" alt="Search" />
+      </div>
 
-            <div class="box flex">
-                <img src="img/Chat_List.png" alt="Event">
-                <div class="box_info flex">
-                    <h3><span>Organizzati</span> con<br>tutto il mondo</h3>
-                    <h6>Raggiungi e interagisci con fan e amici</h6>
-                    <div class="info_img">
+      <div class="box flex">
+        <img src="img/Chat_List.png" alt="Event" />
+        <div class="box_info flex">
+          <h3><span>Organizzati</span> con<br />tutto il mondo</h3>
+          <h6>Raggiungi e interagisci con fan e amici</h6>
+          <!--                     <div class="info_img">
                         <img src="icon/Chat.svg" alt="chat_icon">
-                    </div>
-                </div>
-            </div>
+                    </div> -->
+        </div>
+      </div>
 
-            <div class="box flex">
-                <div class="box_info flex">
-                    <h3>Le <span>informazioni</span> di<br>cui hai bisogno</h3>
-                    <h6>Cerca tramite data, luogo, prezzo e categoria</h6>
-                    <div class="info_img">
+      <div class="box flex">
+        <div class="box_info flex">
+          <h3>Le <span>informazioni</span> di<br />cui hai bisogno</h3>
+          <h6>Cerca tramite data, luogo, prezzo e categoria</h6>
+          <!--                     <div class="info_img">
                         <img src="icon/Search.svg" alt="search_icon">
-                    </div>
-                </div>
-                <img src="img/Event.png" alt="Event">
-            </div>
-
+                    </div> -->
         </div>
+        <img src="img/Event.png" alt="Event" />
+      </div>
+    </div>
+  </div>
 
+  <div id="team" class="container view">
+    <h1>EHI</h1>
+    <h2>TEAM</h2>
+    <h5>Scopri la nostra crew</h5>
+
+    <div class="team_members flex">
+      @for (member of members; track $index) {
+      <div class="member_container">
+        <div class="member flex">
+          <img src="team/{{ member.avatar }}.png" alt="Avatar" />
+          <h4>{{ member.name }}</h4>
+          <h6>Co-Founder</h6>
+          <h5>{{ member.role }}</h5>
+        </div>
+      </div>
+      }
     </div>
 
-    <div id="team" class="container view">
-        <h1>EHI</h1>
-        <h2>TEAM</h2>
-        <h5>Scopri la nostra crew</h5>
-
-        <div class="team_members flex">
-            @for (member of members; track $index) {
-            <div class="member_container">
-                <div class="member flex">
-                    <img src="team/{{ member.avatar }}.png" alt="Avatar">
-                    <h4>{{ member.name }}</h4>
-                    <h6>Co-Founder</h6>
-                    <h5>{{ member.role }}</h5>
-                </div>
-            </div>
-            }
-        </div>
-
-        <div class="social">
-            <h5>Puoi trovarci anche su:</h5>
-            <div class="link flex">
-                <a href="https://www.instagram.com/ehiapp/" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                    <p>Instagram</p>
-                </a>
-                <a href="https://www.tiktok.com/@ehi.app" target="_blank">
-                    <i class="fa-brands fa-tiktok"></i>
-                    <p>TikTok</p>
-                </a>
-                <a href="https://www.linkedin.com/company/ehi-app" target="_blank">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                    <p>LinkedIn</p>
-                </a>
-            </div>
-        </div>
-
-        <div class="hr"></div>
-
+    <div class="social">
+      <h5>Puoi trovarci anche su:</h5>
+      <div class="link flex">
+        <a href="https://www.instagram.com/ehiapp/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+          <p>Instagram</p>
+        </a>
+        <a href="https://www.tiktok.com/@ehi.app" target="_blank">
+          <i class="fa-brands fa-tiktok"></i>
+          <p>TikTok</p>
+        </a>
+        <a href="https://www.linkedin.com/company/ehi-app" target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i>
+          <p>LinkedIn</p>
+        </a>
+      </div>
     </div>
 
-    <div id="contact" class="container view">
-        <h1>EHI</h1>
-        <h2>CONTATTACI</h2>
-        <h5>Promuovi i tuoi eventi con <strong>EHI</strong> e raggiungi più partecipanti! Diventa nostro partner per
-            pubblicizzare e gestire al meglio le tue iniziative. Ti risponderemo al più presto!</h5>
+    <!--         <div class="hr"></div> -->
+  </div>
 
+  <div id="contact" class="container view">
+    <h1>EHI</h1>
+    <h2>CONTATTACI</h2>
+    <h5>
+      Promuovi i tuoi eventi con <strong>EHI</strong> e raggiungi più partecipanti! Diventa nostro partner per
+      pubblicizzare e gestire al meglio le tue iniziative. Ti risponderemo al più presto!
+    </h5>
 
-        <div class="contact_form">
-            <form action="">
-                <div class="form-row">
-                    <input type="text" placeholder="Nome" required>
-                    <input type="text" placeholder="Cognome">
-                </div>
-                <input type="email" placeholder="Email" required>
-                <input type="text" placeholder="Oggetto" required>
-                <textarea name="text" placeholder="Ehi! Chiedici tutto quello di cui hai bisogno." required></textarea>
-                <button type="submit">Invia</button>
-            </form>
-            <h6>Non ti preoccupare, non ti invieremo spam</h6>
+    <div class="contact_form">
+      <form action="">
+        <div class="form-row">
+          <input type="text" placeholder="Nome" required />
+          <input type="text" placeholder="Cognome" />
         </div>
+        <input type="email" placeholder="Email" required />
+        <input type="text" placeholder="Oggetto" required />
+        <textarea name="text" placeholder="Ehi! Chiedici tutto quello di cui hai bisogno." required></textarea>
+        <button type="submit">Invia</button>
+      </form>
+      <h6>Non ti preoccupare, non ti invieremo spam</h6>
     </div>
-
+  </div>
 </main>
 
 <app-footer />
